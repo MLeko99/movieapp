@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-image: linear-gradient(to top, rgba(36,37,42, 0.7) 0, rgba(0, 0, 0, 0.5) 60%, rgba(36,37,42, 0.7) 100%),url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 1000px;
+}
+
+.app {
+  padding: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  width: fit-content;
+  color: white;
+}
+
+.search {
+  width: 60%;
+  margin: 4rem 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 350px;
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  background: black;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
+
+  outline: none;
+  color: #a1a1a1;
+  background: black; 
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #f9d3b4;
+  font-family: var(--font-raleway);
+}
+
+.container {
+  width: 100%;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  height: 460px;
+  margin: 1.5rem;
+
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #f9d3b4;
+}
+
+.movie:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03, 1.03);
+}
+
+.movie div:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+}
+
+.movie div:nth-of-type(2) img {
+  height: 400px;
+  width: 100%;
+}
+
+.movie div:nth-of-type(3) {
+  z-index: 2;
+  background-color: #343739;
+  padding: 16px 24px 24px 24px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.movie div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.movie div:nth-of-type(3) h3 {
+  margin-top: 5px;
+  font-family: "Roboto Slab", serif;
+  color: #f9d3b4;
+}
+
+.movie:hover div:nth-of-type(2) {
+  height: 100%;
+  opacity: 0.2;
+}
+
+.movie:hover div:nth-of-type(3) {
+  background-color: transparent;
+}
+
+.movie:hover div:nth-of-type(1) {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin-top: 2rem;
+  }
+
+  .movie {
+    width: "100%";
+    margin: 1rem;
+  }
+}
+
+.icon-style {
+  margin-left: -53px;
+  margin-bottom: 354px;
+  color: black;
+  transform: scale(1.7);
+}
+p {
+  color: rgb(237, 158, 11);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.locandina {
+  margin-top: 100px;
+  margin-left: 300px;
+  position: relative;
+}
+.text {
+  color: white;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.type {
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: -250px;
+  margin-bottom: 30px;
+}
+.minutes {
+  font-size: 20px;
+  color: white;
+  margin-top:0pc;
+  margin-left: -250px;
+}
+.detailsH1 {
+  font-size: 40px;
+  color: white;
+  margin-top: -160px;
+  margin-bottom: 50px;
+  margin-left: -250px;
+}
+.detailsH2 {
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: -250px;
+}
+.Favoriti {
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.IMDbLink {
+  color: rgb(27, 122, 16);
+  margin-top: 110px;
+  text-align: left;
+  margin-left: 0px;
+  margin-left: -250px;
+}
+
+.footer h3 {
+  color:white;
+  bottom:0px;
+  margin-left: 0px;
+}
+
+.footer a{
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+.footer{
+  position: relative;
+}
+.social-container{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.linkCSS{
+  color: white;
+}
+.IMDbLink{
+  color:white;
+}
+
+iframe{
+  margin-top: 75px;
+  margin-bottom:30px;
+  margin-left: 140px;
+}
+
+.movie_header{
+  margin-left: 1000px;
+  margin-top: -260px;
+  position: absolute;
+}
+
+.info_section{
+margin-top: 100px;
+background: rgba(0, 0, 0, 0.08);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+.movie_card{
+  max-width: 1300px;
+  margin-bottom: 20px;
+}
+

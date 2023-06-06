@@ -1,0 +1,76 @@
+.signin-container {
+max-height: 500px;
+margin: 0 auto;
+max-width: 400px;
+padding: 20px;
+color: #fff;
+margin-bottom: 130px;
+background: rgba(0, 0, 0, 0.01);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+border: 1px solid rgba(255, 255, 255, 0.21);
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+
+}
+
+p {
+  text-align: center;
+  color: #fff;
+  margin-left: 60px;
+}
+
+p a {
+  color: black;
+  text-decoration: none;
+  
+}
+.signin-container {
+  margin-top: 90px;
+  zoom: 1.5;
+}
+
+.signin-container p{
+  margin-left: 40px;
+
+}
+
+.signin-container h3{
+  margin-left: 110px;
+  margin-bottom: 20px;
+}
+

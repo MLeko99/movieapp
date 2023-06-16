@@ -17,7 +17,9 @@ body {
   background-image: linear-gradient(to top, rgba(36,37,42, 0.7) 0, rgba(0, 0, 0, 0.5) 60%, rgba(36,37,42, 0.7) 100%),url("wallpaper.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: 1000px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .app {
@@ -39,7 +41,6 @@ h1 {
 .search {
   width: 60%;
   margin: 4rem 0 2rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,10 +284,10 @@ a {
 
 .footer a{
   margin-left: 40px;
-  margin-bottom: 5px;
+  
 }
 .footer{
-  position: relative;
+  margin-top: auto;
 }
 .social-container{
   position: absolute;
